@@ -38,4 +38,13 @@ fn main() {
         };
     println!("{} -> {}", n, big_n);
     loop_method(big_n);
+
+    let mut numbers: Vec<u32> = Vec::new();
+    for i in 0..10 {
+        let x = i * i;
+        numbers.push(x);
+    }
+    for num in numbers {
+        println!("{}", num);
+    }
 }
