@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["Ramesh <mail2.rameshr@gmail.com>"]
 
 [dependencies]
+
+[[bin]]
+name = "reference_example"
+path = "src/reference_example.rs"
