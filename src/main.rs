@@ -1,5 +1,20 @@
 use std::env;
 
+fn loop_method(n: i32) {
+    let mut count = n.clone();
+    loop {
+        if count % 2 == 0 {
+            count = count / 2;
+        } else {
+            count = count * 2;
+        }
+        println!("{}", count);
+        if count == n {
+            break;
+        }
+    }
+}
+
 fn main() {
     let arg = env::args().nth(1).map(|s| s.to_owned()).unwrap_or_else(|| "5".to_owned());
     println!("value n {}", &arg);
@@ -22,4 +37,5 @@ fn main() {
             n/2
         };
     println!("{} -> {}", n, big_n);
+    loop_method(big_n);
 }
