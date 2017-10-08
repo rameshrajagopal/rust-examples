@@ -1,5 +1,13 @@
 use std::env;
 
+fn tuple_destructure(pair: (i32, i32)) {
+   match pair {
+       (x, y) if x > y => println!("x > y"),
+       (x, y) if x < y => println!("x < y"),
+       _ => println!("uknown"),
+   }
+}
+
 fn loop_method(n: i32) {
     let mut count = n.clone();
     loop {
@@ -12,6 +20,16 @@ fn loop_method(n: i32) {
         if count == n {
             break;
         }
+    }
+}
+
+fn number_match(number: i32) {
+    println!("{}", number);
+    match number {
+        1 => println!("One"),
+        2 | 3 | 5 | 7 | 11 => println!("Prime numbers"),
+        13...19 => println!("Teens"),
+        _ => println!("nothing special"),
     }
 }
 
@@ -47,4 +65,9 @@ fn main() {
     for num in numbers {
         println!("{}", num);
     }
+
+    number_match(n);
+
+    let pair = (20, n);
+    tuple_destructure(pair);
 }
