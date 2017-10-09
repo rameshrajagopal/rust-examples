@@ -8,3 +8,7 @@ authors = ["Ramesh <mail2.rameshr@gmail.com>"]
 [[bin]]
 name = "reference_example"
 path = "src/reference_example.rs"
+
+[[bin]]
+name = "functions_ex"
+path = "src/functions.rs"
