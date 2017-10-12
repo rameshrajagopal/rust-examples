@@ -12,3 +12,7 @@ path = "src/reference_example.rs"
 [[bin]]
 name = "functions_ex"
 path = "src/functions.rs"
+
+[[bin]]
+name = "closures_ex"
+path = "src/closures.rs"
