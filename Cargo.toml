@@ -29,3 +29,7 @@ path = "src/json_serde.rs"
 [[bin]]
 name = "string_ex"
 path = "src/strings.rs"
+
+[[bin]]
+name = "sum_nprimes"
+path = "src/sum_of_n_primes.rs"
