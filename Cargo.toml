@@ -25,3 +25,7 @@ path = "src/closures.rs"
 [[bin]]
 name = "json_serde"
 path = "src/json_serde.rs"
+
+[[bin]]
+name = "string_ex"
+path = "src/strings.rs"
